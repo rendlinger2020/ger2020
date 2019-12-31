@@ -10,7 +10,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             sh 'echo "it is a wonderfull day " >> wonderfullday.txt'
           }
