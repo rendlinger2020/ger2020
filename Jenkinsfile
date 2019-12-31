@@ -9,4 +9,7 @@ pipeline {
     }
 
   }
+  environment {
+    la = 'teda'
+  }
 }
