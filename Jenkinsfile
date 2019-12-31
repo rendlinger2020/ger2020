@@ -2,29 +2,9 @@ pipeline {
   agent any
   stages {
     stage('stage01') {
-      parallel {
-        stage('stage01') {
-          steps {
-            sh 'echo hello worldo >> findme14h.txt'
-            echo 'good by crewl world'
-          }
-        }
-
-        stage('error') {
-          steps {
-            sh 'echo "it is a wonderfull day " >> wonderfullday.txt'
-          }
-        }
-
-      }
-    }
-
-    stage('error') {
       steps {
-        dir(path: '/home') {
-          sh 'echo "tooo" >> newhome'
-        }
-
+        sh 'echo hello worldo >> findme14h.txt'
+        echo 'good by crewl world'
       }
     }
 
