@@ -19,9 +19,12 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        dir(path: '/home')
+        dir(path: '/home') {
+          sh 'echo "tooo" >> newhome'
+        }
+
       }
     }
 
