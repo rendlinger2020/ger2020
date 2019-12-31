@@ -8,11 +8,5 @@ pipeline {
       }
     }
 
-    stage('error') {
-      steps {
-        waitUntil()
-      }
-    }
-
   }
 }
